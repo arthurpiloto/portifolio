@@ -1,0 +1,13 @@
+nav{
+    width: 100vw;
+    z-index: 2;
+}
+
+ul{
+    color: white;
+}
+
+.slide{
+    height: 75vh;
+    overflow: hidden;
+}

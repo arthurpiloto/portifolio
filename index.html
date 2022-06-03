@@ -4,10 +4,61 @@
         <title>Title</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="public/css/uikit.min.css" />
-        <script src="public/js/uikit.min.js"></script>
-        <script src="public/js/uikit-icons.min.js"></script>
+        <link rel="stylesheet" href="./assets/css/uikit.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="./assets/js/uikit.min.js"></script>
+        <script src="./assets/js/uikit-icons.min.js"></script>
     </head>
-    <body>
+    <body class="uk-light">
+        <div class="uk-container uk-container-expand uk-padding-remove">
+            <header>
+                <nav class="uk-position-fixed uk-navbar-transparent uk-navbar-container uk-padding-small uk-padding-remove-top uk-padding-remove-bottom" uk-navbar>
+
+                    <div class="uk-navbar-left">
+                        <a href="#offcanvas-slide" class="uk-navbar-toggle uk-button uk-button-disable uk-margin-auto uk-text-lead uk-text-light" uk-toggle>
+                            <span uk-navbar-toggle-icon></span>
+                            <span class="uk-margin-small-left">Menu</span>
+                        </a>
+        
+                        <div id="offcanvas-slide" uk-offcanvas>
+                            <div class="uk-offcanvas-bar">
+                                <ul class="uk-nav uk-nav-default uk-text-lead uk-text-light">
+                                    <li class="uk-active"><a href="#">Menu</a></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#">Item</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="uk-navbar-right uk-logo" href="">
+                        <img data-src="./assets/img/logo.png" width="150px" height="150px" alt="Logo Com o Nome Arthur Piloto" uk-img>
+                    </a>
+                </nav>
+            </header>
+            <main>
+                <div class="slide uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+                    <ul class="uk-slideshow-items">
+                        <li>
+                            <img src="./assets/img/slide-img1.png" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="./assets/img/slide-img2.png" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="./assets/img/slide-img3.png" alt="" uk-cover>
+                        </li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                </div>
+                
+            </main>
+        </div>
     </body>
 </html>
