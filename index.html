@@ -4,10 +4,8 @@
         <title>Title</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./assets/css/uikit.min.css">
         <link rel="stylesheet" href="./assets/css/style.css">
-        <script src="./assets/js/uikit.min.js"></script>
-        <script src="./assets/js/uikit-icons.min.js"></script>
+        <script src="./assets/js/script.js" defer></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/css/uikit.min.css"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit.min.js" 
         integrity="sha512-OZ9Sq7ecGckkqgxa8t/415BRNoz2GIInOsu8Qjj99r9IlBCq2XJlm9T9z//D4W1lrl+xCdXzq0EYfMo8DZJ+KA==" crossorigin="anonymous" defer></script>
@@ -15,76 +13,68 @@
         integrity="sha512-hcz3GoZLfjU/z1OyArGvM1dVgrzpWcU3jnYaC6klc2gdy9HxrFkmoWmcUYbraeS+V/GWSgfv6upr9ff4RVyQPw==" crossorigin="anonymous" defer></script> 
     </head>
     <body class="uk-light">
-            <header class="uk-padding-remove">
-                <nav class="uk-position-fixed uk-navbar-transparent uk-navbar-container uk-padding-small uk-padding-remove-top uk-padding-remove-bottom" uk-navbar>
+        <header class="uk-padding-remove">
+            <nav id="navbar" class="uk-position-fixed uk-navbar-transparent uk-navbar-container uk-padding-small uk-padding-remove-top uk-padding-remove-bottom" uk-navbar>
 
-                    <div class="uk-navbar-left">
-                        <a href="#offcanvas-slide" class="uk-navbar-toggle uk-button uk-button-disable uk-margin-auto uk-text-lead uk-text-light" uk-toggle>
-                            <span uk-navbar-toggle-icon></span>
-                            <span class="uk-margin-small-left">Menu</span>
-                        </a>
-        
-                        <div id="offcanvas-slide" uk-offcanvas>
-                            <div class="uk-offcanvas-bar">
-                                <ul class="uk-nav uk-nav-default uk-text-lead uk-text-light">
-                                    <li class="uk-active"><a href="#">Menu</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li class="uk-nav-divider"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="uk-navbar-right uk-logo" href="">
-                        <img data-src="./assets/img/logo.png" width="150px" height="150px" alt="Logo Com o Nome Arthur Piloto" uk-img>
+                <div class="uk-navbar-left">
+                    <a href="#offcanvas-slide" class="uk-navbar-toggle uk-button uk-button-disable uk-margin-auto uk-text-lead uk-text-light" uk-toggle>
+                        <span uk-navbar-toggle-icon></span>
+                        <span class="uk-margin-small-left">Menu</span>
                     </a>
-                </nav>
-            </header>
-            <main class="uk-padding-remove uk-background-secondary">
-                <div class="slide uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true autoplay-interval: 2000 animation: push">
-                    <div class="uk-position-center uk-position-medium card-name" style="position: absolute;">
-                        <div uk-slideshow-parallax = "x: 500, -500" >
-                            <div class="uk-card uk-card uk-card-body uk-width-xlarge uk-border-rounded  uk-light">
-                                <h3 class="uk-card-title uk-text-primary uk-text-center">ARTHUUR PILOOTO</h3>
-                                <p class="uk-text-center">Web-Developer | Sofware-Engineer</p>
-                            </div>
+    
+                    <div id="offcanvas-slide" uk-offcanvas>
+                        <div class="uk-offcanvas-bar">
+                            <ul class="uk-nav uk-nav-default uk-text-lead uk-text-light">
+                                <li class="uk-active"><a href="#">Menu</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#">Item</a></li>
+                                <li class="uk-nav-divider"></li>
+                            </ul>
                         </div>
                     </div>
-                    <ul class="uk-slideshow-items">
-                        <li>
-                            <img src="./assets/img/slide-img1.png" alt="" uk-cover>
-                        </li>
-                        <li>
-                            <img src="./assets/img/slide-img2.png" alt="" uk-cover>
-                        </li>
-                        <li>
-                            <img src="./assets/img/slide-img3.png" alt="" uk-cover>
-                        </li>
-                    </ul>
-                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
                 </div>
-                <div class="uk-container uk-container-large">
-                    <div class="uk-margin-large-top uk-column-1-2">
-                        <hr class="uk-divider-icon">
-                        <h2 class="uk-text-secondary uk-margin-remove">Sobre mim</h2>
-                        <p class="uk-margin-remove uk-align-center uk-text-secondary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p class="uk-margin-remove uk-align-center uk-text-secondary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p class="uk-margin-remove uk-align-center uk-text-secondary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p class="uk-margin-remove uk-align-center uk-text-secondary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p class="uk-margin-remove uk-align-center uk-text-secondary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p class="uk-margin-remove uk-align-center uk-text-secondary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p class="uk-margin-remove uk-align-center uk-text-secondary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p class="uk-margin-remove uk-align-center uk-text-secondary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p class="uk-margin-remove uk-align-center uk-text-secondary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>    
+                <a class="uk-navbar-right uk-logo" href="">
+                    <img data-src="./assets/img/logo.png" width="150px" height="150px" alt="Logo Com o Nome Arthur Piloto" uk-img>
+                </a>
+            </nav>
+        </header>
+        <main class="uk-padding-remove uk-background-secondary">
+            <div class="slide uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true autoplay-interval: 2000 animation: push">
+                <div class="uk-position-center uk-position-medium card-name" style="position: absolute;">
+                    <div uk-slideshow-parallax = "x: 500, -500" >
+                        <div class="uk-card uk-card uk-card-body uk-width-xlarge uk-border-rounded  uk-light">
+                            <h3 class="uk-card-title uk-text-primary uk-text-center">ARTHUUR PILOOTO</h3>
+                            <p class="uk-text-center">Web-Developer | Sofware-Engineer</p>
+                        </div>
+                    </div>
                 </div>
-                
-            </main>
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="./assets/img/slide-img1.png" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="./assets/img/slide-img2.png" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="./assets/img/slide-img3.png" alt="" uk-cover>
+                    </li>
+                </ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
+            <div class="uk-container uk-container-large">
+                <div class="uk-margin-large-top uk-column-1-2">
+                    <hr class="uk-divider-icon">
+                    <h2 class="uk-text-secondary uk-margin-remove">Sobre mim</h2>
+                    <p class="uk-margin-remove uk-align-center uk-text-secondary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="uk-margin-remove uk-align-center uk-text-secondary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>    
+            </div>
+        </main>
     </body>
 </html>
