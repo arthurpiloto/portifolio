@@ -12,6 +12,10 @@ nav{
     z-index: 2;
 }
 
+main{
+    min-height: 100vh;
+}
+
 ul{
     color: white;
 }
