@@ -25,9 +25,9 @@
                         <div class="uk-offcanvas-bar">
                             <ul class="uk-nav uk-nav-default uk-text-lead uk-text-light">
                                 <li class="uk-active"><a href="#">Menu</a></li>
-                                <li><a href="#">Item</a></li>
+                                <li><a href="#sobre">Sobre</a></li>
                                 <li class="uk-nav-divider"></li>
-                                <li><a href="#">Item</a></li>
+                                <li><a href="#competencias">Competências</a></li>
                                 <li class="uk-nav-divider"></li>
                                 <li><a href="#">Item</a></li>
                                 <li class="uk-nav-divider"></li>
@@ -66,7 +66,7 @@
             </div>
         </header>
         <main class="uk-background-secondary">
-            <section>
+            <section id="sobre">
                 <div class="uk-container uk-container-large">
                     <div class="uk-margin-large-top uk-column-1-2">
                         <hr class="uk-divider-icon">
@@ -75,8 +75,7 @@
                         <p class="uk-margin-remove uk-align-center uk-text-secondary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <p class="uk-margin-remove uk-align-center uk-text-secondary">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-            </section>
-            <section>
+                </div>
                 <div class="uk-container uk-container-large uk-padding">
                     <div class="uk-child-width-1-3@m uk-grid-large uk-grid-match" uk-grid>
                         <div>
@@ -109,35 +108,30 @@
                     </div>
                 </div>
             </section>
-            <hr class="uk-divider-icon">
-            <section>
-                <div class="uk-container uk-container-large">
-                    <h2 class="uk-text-secondary uk-text-bold"></h2>
-                    <div class="uk-child-width-expand@s uk-text-center" uk-grid>
-                        <div>
-                            <div class="cards-background uk-card uk-card-default uk-card-body uk-card-large">
-                                <span uk-icon="icon: code"></span>
-                            </div>
+            <section id="competencias">
+                <div uk-paralax="x: -200" class="uk-container-large uk-width-1-1 uk-background-cover uk-background-top-center" style="background-image: url(./assets/img/bg4.jpg
+                ); background-attachment: fixed; ">
+                <div  class="uk-container-large uk-width-1-1" style="height: 80vh;">
+                    <div style="height: 200px;">
+                        <div class="uk-card uk-align-right uk-padding uk-margin-remove-bottom uk-padding-remove-bottom uk-text-right">
+                            <span class="uk-text-italic">Skills</span>
+                            <h2 class="uk-text-bolder">Minhas Competências</h2>
                         </div>
-                        <div>
-                            <div class="cards-background uk-card uk-card-default uk-card-body uk-card-large">
-                                <span uk-icon="icon: lock"></span>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="cards-background uk-card uk-card-default uk-card-body uk-card-large">
-                                <span uk-icon="icon: bolt"></span>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="cards-background uk-card uk-card-default uk-card-body uk-card-large">
-                                <span uk-icon="icon: heart"></span>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="uk-container uk-container-large uk-width-1-3 uk-background-secondary uk-margin-remove uk-padding-small-top" style="margin-top: -110px!important; height: 500px;" >
+                         <div class="uk-list uk-padding-large uk-flex uk-flex-column" style="gap: 40px;">
+                            <li class="uk-flex uk-flex-middle uk-flex-wrap uk-text-large" style="gap:0px 5px; color: #f5f5f5; width: 300px;" class="uk-text-small"><span class="num-list uk-text-large uk-text-bold">1 -</span> Front-end <span class="uk-text-small uk-text-lead uk-margin-medium-left">Linguagens como HTML e CSS</span>
+                            </li>
+                            <li class="uk-flex uk-flex-middle uk-flex-wrap uk-text-large" style="gap:0px 5px; color: #f5f5f5; width: 300px;" class="uk-text-small"><span class="num-list uk-text-large uk-text-bold">3 -</span> JavaScript <span class="uk-text-small uk-text-lead uk-margin-medium-left">Juntamente com HTML e CSS, o JavaScript é responsável pela dinâmica</span>
+                            </li>
+                            <li class="uk-flex uk-flex-middle uk-flex-wrap uk-text-large" style="gap:0px 5px; color: #f5f5f5; width: 300px;" class="uk-text-small"><span class="num-list uk-text-large uk-text-bold">2 -</span> Java <span class="uk-text-small uk-text-lead uk-margin-medium-left">Boas práticas e implementação de POO e clean code</span>
+                            </li>
+                         </div>
                     </div>
                 </div>
             </section>
-            <section>
+
+            <!-- <section>
                 <div class="uk-padding uk-margin-top uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider >
 
                     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
@@ -169,6 +163,63 @@
                 
                     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
                     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+            </section> -->
+            
+            <section>
+                <h1 class="uk-text-secondary uk-text-bold uk-padding-large">Projetos</h1>
+                <div class="uk-visible-toggle uk-dark" tabindex="-1" uk-slider="sets: true">
+    
+                    <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@m uk-margin-auto">
+                        <li class="uk-background-cover"
+                            style="background-image: url(https://github.com/Guilherme-Joviniano/Doctor-Strange-2-Concept/blob/main/assets/imgs/Home%20-%20Web.png?raw=true); filter: grayscale(1)">
+                            <div class="uk-position-center uk-panel">
+                                <h1 class="uk-text-lead uk-text-emphasis">Projeto Strange</h1>
+                            </div>
+                        </li>
+                        <li class="uk-background-cover uk-height-medium"
+                            style="background-image: url(https://images.unsplash.com/photo-1591174425156-fd472f354be4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80);">
+                            <div class="uk-position-center uk-panel">
+                                <h1 class="uk-text-lead uk-text-emphasis">
+                                    Projeto Personagem
+                                </h1>
+                            </div>
+                        </li>
+                        <li class="uk-background-cover "
+                            style="background-image: url(https://images.unsplash.com/photo-1539622287262-61e066a2c534?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80)">
+                            <div class="uk-position-center uk-panel">
+                                <h1 class="uk-text-lead uk-text-emphasis">Projeto Eixo</h1>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <div class="uk-container uk-container-large uk-padding-small">
+                    <h2 class="uk-text-secondary uk-text-bold"></h2>
+                    <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+                        <div>
+                            <div class="cards-background uk-card uk-card-default uk-card-body uk-card-large">
+                                <span uk-icon="icon: code"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="cards-background uk-card uk-card-default uk-card-body uk-card-large">
+                                <span uk-icon="icon: lock"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="cards-background uk-card uk-card-default uk-card-body uk-card-large">
+                                <span uk-icon="icon: bolt"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="cards-background uk-card uk-card-default uk-card-body uk-card-large">
+                                <span uk-icon="icon: heart"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
