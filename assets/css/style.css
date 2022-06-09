@@ -80,3 +80,14 @@ ul{
 .cards-background{
     background-color: #313131!important;
 }
+
+@media(max-width: 768px){
+    .slide{
+        height: 50vh;
+        overflow: hidden;
+    }
+
+    .uk-card-hover:hover{
+        transform: none;
+    }
+}
